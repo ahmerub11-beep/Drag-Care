@@ -1,0 +1,189 @@
+.dashboard-shell {
+  min-width: 0;
+}
+
+.dashboard-navbar,
+.dashboard-main,
+.dashboard-navigation,
+.dashboard-shell .card,
+.dashboard-shell .table-responsive {
+  min-width: 0;
+}
+
+.dashboard-brand,
+.dashboard-account-actions {
+  min-width: 0;
+}
+
+.dashboard-brand .navbar-brand {
+  white-space: normal;
+}
+
+.dashboard-nav-list {
+  flex-wrap: wrap;
+}
+
+.dashboard-shell .table-responsive {
+  -webkit-overflow-scrolling: touch;
+}
+
+.dashboard-shell .table {
+  margin-bottom: 0;
+}
+
+.dashboard-shell .table th,
+.dashboard-shell .table td {
+  vertical-align: middle;
+}
+
+@media (max-width: 767.98px) {
+  .dashboard-navbar {
+    align-items: stretch;
+    padding: 0.75rem !important;
+  }
+
+  .dashboard-navbar > .container-fluid {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .dashboard-brand {
+    flex-wrap: wrap;
+    gap: 0.5rem !important;
+  }
+
+  .dashboard-brand .navbar-brand {
+    font-size: 1rem !important;
+  }
+
+  .dashboard-brand .badge {
+    margin-left: 0 !important;
+    font-size: 0.65rem;
+  }
+
+  .dashboard-account-actions {
+    justify-content: space-between;
+    gap: 0.5rem !important;
+  }
+
+  .dashboard-main {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .dashboard-heading {
+    align-items: stretch !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .dashboard-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-heading p {
+    line-height: 1.45;
+  }
+
+  .dashboard-page-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-page-actions .btn {
+    justify-content: center;
+    white-space: normal;
+  }
+
+  .dashboard-navigation {
+    margin-bottom: 1rem !important;
+  }
+
+  .dashboard-nav-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    padding-bottom: 0.25rem;
+  }
+
+  .dashboard-nav-list .nav-item {
+    flex: 0 0 auto;
+  }
+
+  .dashboard-nav-list .nav-link {
+    white-space: nowrap;
+  }
+
+  .dashboard-shell .card-header {
+    padding: 0.75rem !important;
+  }
+
+  .dashboard-shell .card-header > .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .dashboard-shell .card-header input[type="text"] {
+    flex: 1 1 9rem;
+    width: auto !important;
+    min-width: 0;
+  }
+
+  .dashboard-shell .card-header h5 {
+    font-size: 1rem;
+  }
+
+  .dashboard-shell .table-responsive table {
+    min-width: 680px;
+  }
+
+  .dashboard-shell .table-responsive table th,
+  .dashboard-shell .table-responsive table td {
+    padding: 0.6rem 0.65rem;
+    white-space: nowrap;
+  }
+
+  .dashboard-shell .table-responsive table td:nth-child(2) {
+    white-space: normal;
+    min-width: 150px;
+  }
+
+  .dashboard-shell .form-select {
+    max-width: 100%;
+  }
+
+  .dashboard-shell .alert {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .dashboard-account-actions .btn {
+    padding-inline: 0.65rem;
+    font-size: 0.75rem;
+  }
+
+  .dashboard-main > .dashboard-heading {
+    gap: 0.75rem !important;
+  }
+
+  .dashboard-page-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-shell .row.g-3 > [class*="col-"] {
+    min-width: 0;
+  }
+
+  .dashboard-shell .table-responsive table {
+    min-width: 620px;
+  }
+
+  .dashboard-shell .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  .dashboard-shell .modal-content {
+    max-height: calc(100dvh - 1rem);
+    overflow-y: auto;
+  }
+}

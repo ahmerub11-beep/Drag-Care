@@ -1,0 +1,79 @@
+:root {
+  --primary: #7a45a9;
+  --primary-hover: #673194;
+  --primary-light: #f5eefa;
+  --primary-border: #e8d5f5;
+  --secondary: #1d395f;
+  --secondary-light: #eef3fa;
+  --topbar-bg: #05326f;
+  --accent-red: #db4444;
+  --accent-green: #10b981;
+  --accent-blue: #0284c7;
+  --rating-gold: #f59e0b;
+  --bg-body: #faf7fb;
+  --text-main: #1d395f;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --border-light: #f1f5f9;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px -2px rgba(29, 57, 95, 0.08);
+  --shadow-lg: 0 12px 28px -6px rgba(29, 57, 95, 0.12);
+  --bs-primary: var(--primary);
+  --bs-primary-rgb: 122, 69, 169;
+  --bs-link-color: var(--primary);
+  --bs-link-hover-color: var(--primary-hover);
+  --bs-body-color: var(--text-main);
+  --bs-body-bg: var(--bg-body);
+}
+
+body {
+  min-width: 320px;
+  background: var(--bg-body);
+  color: var(--text-main);
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1320px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary,
+.bg-primary {
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primary-hover);
+  --bs-btn-hover-border-color: var(--primary-hover);
+  --bs-btn-active-bg: var(--primary-hover);
+  --bs-btn-active-border-color: var(--primary-hover);
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primary);
+  --bs-btn-hover-border-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+

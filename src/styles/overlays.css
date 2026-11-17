@@ -1,0 +1,148 @@
+.modal-content {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-dialog {
+  width: calc(100% - 1.5rem);
+  max-width: var(--bs-modal-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-content .modal-close-btn {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--secondary);
+}
+
+.cart-drawer-header .modal-close-btn {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--secondary);
+}
+
+.modal-content .btn-close {
+  z-index: 2;
+}
+
+.cart-drawer-panel {
+  width: min(460px, 100vw) !important;
+  z-index: 1060;
+  background: #fff;
+}
+
+.offcanvas-backdrop {
+  z-index: 1055;
+}
+
+.cart-drawer-header h3 {
+  margin: 0;
+}
+
+.cart-shipping-meter {
+  color: var(--secondary);
+  font-size: 13px;
+}
+
+.meter-bar {
+  height: 7px;
+  overflow: hidden;
+  margin-top: 10px;
+  border-radius: 99px;
+  background: var(--border-light);
+}
+
+.meter-fill {
+  height: 100%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.cart-item-row {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cart-item-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.cart-item-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.cart-item-title {
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cart-item-salt {
+  margin-bottom: 6px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.cart-drawer-footer {
+  background: #fff;
+}
+
+.cart-summary-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.cart-summary-line.total {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+  color: var(--secondary);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.btn-checkout-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.qty-stepper {
+  flex-wrap: nowrap;
+}
+
+.qty-stepper .btn {
+  flex-shrink: 0;
+}
+
+.app-root {
+  overflow-x: clip;
+}
+

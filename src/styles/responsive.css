@@ -1,0 +1,98 @@
+.auth-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-block: clamp(1rem, 4vh, 3rem);
+}
+
+@media (max-width: 1199.98px) {
+  .search-container {
+    max-width: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .search-cat-select {
+    flex-basis: 36%;
+    width: 36%;
+    min-width: 88px;
+    max-width: 140px;
+    padding-inline: 8px 22px;
+    font-size: 11px;
+  }
+
+  .search-input {
+    padding-inline: 8px;
+    font-size: 12px;
+  }
+
+  .header-actions .action-icon-btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .search-btn {
+    padding-inline: 10px;
+  }
+
+  .search-btn span {
+    display: none;
+  }
+
+  .category-dropdown-trigger {
+    min-width: 0;
+    padding-inline: 12px;
+  }
+
+  .nav-links-list {
+    align-items: stretch !important;
+    gap: 2px !important;
+    border-top: 1px solid var(--border-light);
+  }
+
+  .nav-links-list .nav-link {
+    padding: 8px 4px !important;
+  }
+
+  .hero-main-card {
+    min-height: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .countdown-box {
+    flex-wrap: wrap;
+  }
+
+  .prescription-banner h3 {
+    font-size: 21px;
+  }
+
+  .btn-upload-lg {
+    min-width: 0;
+  }
+
+  .product-quickview-btn {
+    opacity: 1;
+  }
+
+  .modal-dialog {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .cart-drawer-footer {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom)) !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .auth-page .card-body {
+    padding: 1.25rem !important;
+  }
+}
